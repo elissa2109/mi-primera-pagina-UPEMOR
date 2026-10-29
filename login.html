@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Alumnos - UPEMOR </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Forzar fondo general de la página */
+    body.cbtis-login-body {
+        background: #ad1d1d !important; /* Fondo general solicitado */
+    }
+    
+    /* Forzar el fondo del panel izquierdo (cuadro al lado del blanco) */
+    .cbtis-left-panel {
+        background: #ad3f1d !important; /* Fondo del cuadro solicitado */
+    }
+</style>
+<style>
+    /* Forzar fondo rojo oscuro en la mitad izquierda o en la página */
+    body {
+        background-color: #8b0000 !important; /* Rojo oscuro */
+    }
+    
+    /* Cambiar el color del contenedor izquierdo si usa clases específicas */
+    div, section {
+        background-color: inherit;
+    }
+
+    /* Cambiar el botón de INGRESAR a tono naranja/rojo brillante */
+    button, input[type="submit"], .btn {
+        background-color: #ff4500 !important; /* Naranja rojizo */
+        border-color: #ff4500 !important;
+        color: #ffffff !important;
+    }
+
+    /* Cambiar enlaces a naranja claro */
+    a {
+        color: #ff8c00 !important;
+    }
+</style>
+<body class="cbtis-login-body">
+
+    <!-- Contenedor principal de dos columnas -->
+    <div class="cbtis-login-container">
+
+        <!-- LADO IZQUIERDO: Panel Azul con Bienvenida e Ilustración -->
+        <div class="cbtis-left-panel">
+            <div class="cbtis-left-content">
+                
+                <div class="cbtis-illustration-box">
+                    <div class="cbtis-badge-icon">🖋️📓</div>
+                    <h2>¡BIENVENID@!</h2>
+                </div>
+
+                <div class="cbtis-notices-box">
+                    <h3>¡Avisos!</h3>
+                    <p>"Mantente al día con tus calificaciones, tiras de materias, avisos escolares y comunicados oficiales de la comunidad UPEMOR. </p>
+                </div>
+
+                <div class="cbtis-slider-dots">
+                    <span class="cbtis-dot active"></span>
+                    <span class="cbtis-dot"></span>
+                    <span class="cbtis-dot"></span>
+                </div>
+            </div>
+
+            <div class="cbtis-left-footer">
+                Universidad Politécnica del Estado de Morelos &copy; 2026<br>
+                <span>Aviso de privacidad | Términos y condiciones</span>
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Panel Blanco con el Formulario de Acceso -->
+        <div class="cbtis-right-panel">
+            <div class="cbtis-login-wrapper">
+                
+                <div class="login-back-container">
+                    <a href="index.html" class="cbtis-back-link">← Regresar al inicio</a>
+                </div>
+
+                <div class="cbtis-logo-header">
+                    <div class="login-logo-emoji">📚</div>
+                    <h1> <strong>UPEMOR</strong></h1>
+                </div>
+
+                <form id="form-login" action="#" method="POST">
+                    
+                    <div class="cbtis-input-group">
+                        <label for="usuario">Usuario o matrícula</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit" class="cbtis-btn-ingresar">INGRESAR</button>
+
+                </form>
+
+                <div class="cbtis-login-help">
+                    <a href="#">Tengo dudas</a> | <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
